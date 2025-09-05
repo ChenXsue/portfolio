@@ -1,0 +1,562 @@
+/* 重置和基础样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #ffffff;
+}
+
+/* 导航栏样式 */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1000;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.nav-logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #6b7280;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #1f2937;
+}
+
+/* 主容器布局 */
+.main-container {
+    display: flex;
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+}
+
+/* 左侧边栏 */
+.sidebar {
+    width: 300px;
+    background: #f9fafb;
+    border-right: 1px solid #e5e7eb;
+    padding: 2rem;
+    position: fixed;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 1.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e5e7eb;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profile-name {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.profile-title {
+    font-size: 1rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.contact-item {
+    margin-bottom: 1rem;
+}
+
+.contact-item:not(.contact-item a) {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.contact-item i {
+    width: 16px;
+    color: #9ca3af;
+}
+
+.contact-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    color: #6b7280;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #1f2937;
+}
+
+.contact-link i {
+    width: 16px;
+    color: #9ca3af;
+}
+
+.contact-link i.fa-lg {
+    width: 20px;
+    font-size: 1.2em;
+}
+
+/* 右侧主内容区 */
+.main-content {
+    flex: 1;
+    margin-left: 300px;
+    padding: 2rem 3rem;
+    max-width: calc(100% - 300px);
+}
+
+.content-section {
+    margin-bottom: 2.0rem;
+}
+
+.welcome-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.welcome-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 700px;
+    height: 1px;
+    background-color: #e3e5e8;
+    border-radius: 2px;
+}
+
+.intro-list {
+    font-size: 1.0rem;
+    line-height: 1.8;
+    color: #4b5563;
+}
+
+.intro-list p {
+    margin-bottom: 0.5rem;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 700px;
+    height: 1px;
+    background-color: #e3e5e8;
+    border-radius: 2px;
+}
+
+/* 项目样式 */
+.project-item {
+    margin-bottom: 2.5rem;
+}
+
+.project-description {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.project-description p {
+    margin: 0;
+    color: #4b5563;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.fluid-gifs-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    overflow-x: auto;
+    padding: 0.5rem 0;
+}
+
+.fluid-gif {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.fluid-gif img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center bottom;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.fluid-gif img:hover {
+    transform: scale(1.02);
+}
+
+.gif-label {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.project-links {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    justify-content: left;
+}
+
+.play-link, .github-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.play-link {
+    background: #10b981;
+    color: white;
+    border: 2px solid #10b981;
+}
+
+.play-link:hover {
+    background: #059669;
+    border-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.github-link {
+    background: white;
+    color: #374151;
+    border: 2px solid #374151;
+}
+
+.github-link:hover {
+    background: #374151;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(55, 65, 81, 0.3);
+}
+
+.project-link {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #4d7bdd;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.project-link:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+.project-image {
+    width: 80%;
+    height: 80%;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover img {
+    transform: scale(1.02);
+}
+
+.project-role {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+/* CV部分样式 */
+.cv-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 1.5rem 0 0.5rem 0;
+}
+
+.cv-content h3:first-child {
+    margin-top: 0;
+}
+
+.cv-content p {
+    color: #4b5563;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.resume-download {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: #f8fafc;
+    border-radius: 8px;
+    border: 2px dashed #d1d5db;
+}
+
+.resume-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 0.75rem 1.5rem;
+    background: white;
+    border-radius: 6px;
+    border: 2px solid #2563eb;
+    transition: all 0.3s ease;
+}
+
+.resume-link:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+        border-right: none;
+        border-bottom: 1px solid #e5e7eb;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .welcome-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .project-image {
+        max-width: 100%;
+    }
+    
+    .fluid-gifs-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .fluid-gif {
+        min-width: auto;
+    }
+    
+    .project-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .play-link, .github-link {
+        width: 200px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-container {
+        padding: 0 15px;
+    }
+    
+    .nav-menu {
+        gap: 0.5rem;
+    }
+    
+    .nav-link {
+        font-size: 0.9rem;
+    }
+    
+    .sidebar {
+        padding: 1rem;
+    }
+    
+    .main-content {
+        padding: 1rem;
+    }
+    
+    .profile-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .profile-name {
+        font-size: 1.5rem;
+    }
+    
+    .welcome-title {
+        font-size: 1.8rem;
+    }
+}
+
+/* 滚动条样式 */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* 动画效果 */
+.project-item {
+    transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+    transform: translateX(5px);
+}
+
+.contact-item {
+    transition: color 0.2s ease;
+}
+
+.contact-item:hover {
+    color: #1f2937;
+}
+
+/* 页面加载动画 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* 链接悬停效果 */
+a {
+    transition: all 0.2s ease;
+}
+
+/* 选中状态 */
+.nav-link.active {
+    color: #1f2937;
+    font-weight: 600;
+}

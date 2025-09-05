@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xu Chen - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Xu Chen</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Xu Chen Resume Graphics.pdf" class="nav-link" target="_blank">CV</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <div class="main-container">
+        <!-- Left Sidebar - Personal Information -->
+        <aside class="sidebar">
+            <div class="profile-section">
+                <div class="profile-image">
+                    <img src="IMG_8316.JPG" alt="Xu Chen">
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Los Angeles, CA</span>
+                    </div>
+                    <div class="contact-item">
+                        <a href="mailto:xuchensue@gmail.com" class="contact-link" title="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            Email
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://github.com/ChenXsue" class="contact-link" title="GitHub" target="_blank">
+                            <i class="fab fa-github fa-lg" aria-hidden="true"></i>
+                            GitHub
+                        </a>
+                    </div>
+                    <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/xuchensue/" class="contact-link" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin-in fa-lg" aria-hidden="true"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Right Main Content Area -->
+        <main class="main-content">
+            <!-- Home Content -->
+            <section id="home" class="content-section">
+                <h3 class="welcome-title">About</h3>
+                <div class="intro-list">
+                    <p>• MS Computer Science student at USC (2023-2025)</p>
+                    <p>• Seeking roles in Tech Art, Graphics, or Game Tools</p>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects" class="content-section">
+                <h3 class="section-title">Projects</h3>
+                
+                <!-- Fluid Simulation Project -->
+                <div class="project-item">
+                    <a href="https://github.com/YumengHe/Fluid-Simulation" class="project-link">Fluid Simulation</a>
+                    <div class="project-description">
+                        <p>A 2D fluid simulator in C++ and OpenGL to compare different fluid simulation methods, including Stable Fluids (grid-based), SPH (particle-based), PIC, and APIC. The simulator visualizes incompressible flow and splash behavior using OpenGL and GLUT, with offline simulation data loaded and rendered based on density and particle states.</p>
+                    </div>
+                    <div class="fluid-gifs-container">
+                        <div class="fluid-gif">
+                            <img src="fluid/grid.gif" alt="Grid Simulation">
+                            <p class="gif-label">Grid Simulation</p>
+                        </div>
+                        <div class="fluid-gif">
+                            <img src="fluid/particle.gif" alt="Particle System">
+                            <p class="gif-label">Particle System</p>
+                        </div>
+                        <div class="fluid-gif">
+                            <img src="fluid/flip.gif" alt="FLIP Simulation">
+                            <p class="gif-label">FLIP Simulation</p>
+                        </div>
+                        <div class="fluid-gif">
+                            <img src="fluid/apic.gif" alt="APIC Simulation">
+                            <p class="gif-label">APIC Simulation</p>
+                        </div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/YumengHe/Fluid-Simulation" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                    <p class="project-role">Computer Graphics | C++ | OpenGL | PIC/APIC | GLSL | GLUT | Fluid Simulation</p>
+                </div>
+
+                <!-- Factor Fighter Project -->
+                <div class="project-item">
+                    <a href="https://chenxsue.github.io/FactorFighterPageSite/gold/ " class="project-link">Factor Fighter – 2D Puzzle Combat Game</a>
+                    <div class="project-description">
+                        <p>A Unity-based educational puzzle game where players defeat enemies by solving math equations. Features drag-and-drop mechanics, multi-scene level transitions, and Google Sheets-based analytics logging via Node.js.</p>
+                    </div>
+                    <div class="project-image">
+                        <img src="factorfighter.png" alt="Factor Fighter Game">
+                    </div>
+                    <div class="project-links">
+                        <a href="https://chenxsue.github.io/FactorFighterPageSite/gold/" class="play-link" target="_blank">
+                            <i class="fas fa-play"></i>
+                            Play Game
+                        </a>
+                        <a href="https://github.com/ChenXsue/Factor-Fighter" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                    <p class="project-role">Game Development | Unity | C# | Puzzle Game | Node.js</p>
+                </div>
+
+                <!-- Unity Plugin for NeRF (Instant-NGP) -->
+                <div class="project-item">
+                    <a href="https://github.com/reiirene/NeRFPlugin" class="project-link">Unity Plugin for NeRF (Instant-NGP)</a>
+                    <div class="project-description">
+                        <p>Developed a Unity plugin to integrate Instant-NGP for fast NeRF training and scene reconstruction. Automated data preprocessing, NeRF training, and Unity scene import. Benchmarked COLMAP performance across GPUs and optimized resolution handling to prevent memory issues.</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/reiirene/NeRFPlugin" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                    <p class="project-role">Unity | NeRF | Instant-NGP | Python | COLMAP | Plugin Dev</p>
+                </div>
+
+            </section>
+
+            <!-- CV Section -->
+            <section id="cv" class="content-section">
+                <h3 class="section-title">Skills</h3>
+
+                <div class="cv-content">
+                    <p><strong>Programming Languages:</strong> C++, C, C#, Python, JavaScript, Java, Lua, Node.js, GLSL, Shader Programming</p>
+                    <p><strong>Graphics & Simulation:</strong> OpenGL, Unity, Maya, GLSL, Instant-NGP, GLUT, PIC/APIC Fluid Simulation</p>
+                    <p><strong>Tools & Libraries:</strong> Eigen, React Native, Figma, Git, Docker, Linux, macOS, Windows</p>
+                    <p><strong>Languages:</strong> English (Fluent), Chinese (Native)</p>
+                    <p><strong>Interests:</strong> Climbing(5.11d, v4, v5), Cooking</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
