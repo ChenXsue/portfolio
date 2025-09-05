@@ -1,68 +1,15 @@
-# 个人作品集网站
+# Xu Chen | Portfolio Website
 
-一个现代化的个人作品集网站，参考了 [Mingfu Li 的作品集](https://mingfuli.github.io/) 设计风格。
+Welcome to my personal portfolio!  
+I'm a MS Computer Science student at USC (2023-2025) and seeking roles in Tech Art, Graphics, or Game Tools
 
-## 功能特性
+🔗 **Live Site**: [https://ChenXsue.github.io](https://ChenXsue.github.io)
 
-- 🎨 现代化设计，响应式布局
-- 📱 移动端友好的导航菜单
-- ⚡ 流畅的滚动动画和交互效果
-- 🎯 清晰的项目展示区域
-- 📧 完整的联系信息展示
-- 🌟 优雅的视觉效果和过渡动画
+## 🚀 Projects
 
-## 技术栈
+- **2D Fluid Simulation** – Real-time simulation in C++ & OpenGL comparing PIC, APIC, SPH, and Stable Fluids.
+- **Factor Fighter** – A Unity puzzle combat game with math-based mechanics and gameplay analytics.
+- **Unity Plugin for Instant-NGP** – Integrated fast NeRF training and scene import into Unity.
 
-- **HTML5** - 语义化标记
-- **CSS3** - 现代样式和动画
-- **JavaScript (ES6+)** - 交互功能
-- **Font Awesome** - 图标库
-- **Google Fonts** - 字体
-
-## 快速开始
-
-1. 克隆或下载项目文件
-2. 在浏览器中打开 `index.html`
-3. 自定义内容：
-   - 修改个人信息
-   - 添加您的项目
-   - 更新联系信息
-   - 替换头像图片
-
-## 自定义指南
-
-### 个人信息
-在 `index.html` 中修改以下内容：
-- 姓名和职业标题
-- 位置信息
-- 邮箱和社交媒体链接
-- 个人简介
-
-### 项目展示
-在项目部分添加您的项目：
-- 项目图片
-- 项目名称和描述
-- 技术栈信息
-- 项目链接
-
-### 样式定制
-在 `styles.css` 中调整：
-- 颜色主题
-- 字体大小
-- 布局间距
-- 动画效果
-
-## 浏览器支持
-
-- Chrome (推荐)
-- Firefox
-- Safari
-- Edge
-
-## 许可证
-
-MIT License - 可自由使用和修改
-
-## 致谢
-
-设计灵感来源于 [Mingfu Li 的作品集](https://mingfuli.github.io/)
+## 🛠️ Tech Highlights
+C++, C, C#, Python, JavaScript, Java, Lua, Node.js, GLSL, Shader Programming, OpenGL, Unity, Maya, GLSL, GLUT
