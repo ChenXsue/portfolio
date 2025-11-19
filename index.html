@@ -78,6 +78,28 @@
             <section id="projects" class="content-section">
                 <h3 class="section-title">Projects</h3>
                 
+                <!-- Particle System Project -->
+                <div class="project-item">
+                    <a href="#" class="project-link">Particle System – GPU Spark / Fire FX</a>
+                
+                    <div class="project-description">
+                        <p>A custom particle system implemented in C++ for PrimeEngine. Supports spawning,
+                            velocity fields, sub-stepping, GPU instancing, and lifetime-based color/size curves.
+                            Used for sparks, trails, fire, and explosion effects.</p>
+                    </div>
+                
+                    <div class="project-video">
+                        <video src="videos/ParticleSystem.mov" controls muted style="max-width: 50%; width: 50%; height: auto;"></video>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/ChenXsue/PEWorkspace-csci522-win32d3d9" class="github-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                    </div>
+                    <p class="project-role">C++ | GPU Instancing | Game Engine | Real-Time FX</p>
+                </div>
+
                 <!-- Fluid Simulation Project -->
                 <div class="project-item">
                     <a href="https://github.com/YumengHe/Fluid-Simulation" class="project-link">Fluid Simulation</a>
@@ -148,6 +170,44 @@
                     <p class="project-role">Unity | NeRF | Instant-NGP | Python | COLMAP | Plugin Dev</p>
                 </div>
 
+                <div class="project-item">
+                    <a href="#" class="project-link">Interactive Water – Real-Time Shallow Water Simulation (Niagara Fluids)</a>
+                
+                    <div class="project-description">
+                        <p>Built a physically-based shallow water system using Unreal Engine’s Niagara Grid2D solver.
+                        Refactored the default Niagara setup by replacing particle-based collision emitters with a
+                        Render Target–driven wave injection pipeline, allowing collisions to write directly into the
+                        Grid2D height/velocity fields. Implemented mesh-accurate interaction through Actor & Component
+                        collision tags, enabling stable player and object ripple deformation. Tuned simulation parameters
+                        including velocity dissipation, timestep multiplier, and collision velocity scaling to eliminate
+                        extreme wave artifacts and achieve smooth, responsive water behavior.</p>
+                    </div>
+                
+                    <div class="project-video">
+                        <video src="videos/InteractiveWater.mov" controls muted style="max-width: 50%; width: 50%; height: auto;"></video>
+                    </div>
+                
+                    <p class="project-role">Unreal Engine | Niagara Grid2D | Shallow Water Solver | GPU Compute | Collision Wave Injection | Real-Time FX</p>
+                </div>
+
+                <div class="project-item">
+                    <a href="#" class="project-link">Interactive Snow – Runtime Footprint Deformation</a>
+                
+                    <div class="project-description">
+                        <p>Implemented an interactive snow system in Unreal Engine by adding the Dynamic Landscape Weather Effects V3 function to
+                        the MW Landscape material. Enabled real-time snow accumulation, terrain blending, and footprint deformation from player
+                        movement. Added character snow/wetness effects through material attributes and foot sockets, and created physics-based
+                        snowballs that interact with the snow using DLWE settings.</p>
+                    </div>
+                
+                    <div class="project-video">
+                        <video src="videos/InteractiveSnow.mp4" controls muted style="max-width: 50%; width: 50%; height: auto;"></video>
+                    </div>
+                
+                    <p class="project-role">Unreal Engine | Dynamic Landscape Weather Effects (DLWE) | Ultra Dynamic Sky | Material Layering |
+                    Footprint Deformation | Character FX | Real-Time Snow Accumulation</p>
+                </div>
+
             </section>
 
             <!-- CV Section -->
@@ -155,11 +215,13 @@
                 <h3 class="section-title">Skills</h3>
 
                 <div class="cv-content">
-                    <p><strong>Programming Languages:</strong> C++, C, C#, Python, JavaScript, Java, Lua, Node.js, GLSL, Shader Programming</p>
-                    <p><strong>Graphics & Simulation:</strong> OpenGL, Unity, Maya, GLSL, Instant-NGP, GLUT, PIC/APIC Fluid Simulation</p>
-                    <p><strong>Tools & Libraries:</strong> Eigen, React Native, Figma, Git, Docker, Linux, macOS, Windows</p>
+                    <p><strong>Programming Languages:</strong> C++, C, C#, Python, JavaScript, Java, Lua, Node.js, GLSL/HLSL, Shader
+                        Programming</p>
+                    <p><strong>Graphics & Simulation:</strong> Unreal Engine (Niagara Fluids, Grid2D, RVT, Material System), Unity,
+                        OpenGL, Maya, Instant-NGP, COLMAP, PIC/APIC Fluid Simulation, Real-Time VFX</p>
+                    <p><strong>Tools & Libraries:</strong> Eigen, Git, Docker, Linux, macOS, Windows, Houdini, React Native, Figma</p>
                     <p><strong>Languages:</strong> English (Fluent), Chinese (Native)</p>
-                    <p><strong>Interests:</strong> Climbing(5.11d, v4, v5), Cooking</p>
+                    <p><strong>Interests:</strong> Climbing (5.11d, V5), Cooking</p>
                 </div>
             </section>
         </main>

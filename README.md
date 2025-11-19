@@ -3,7 +3,7 @@
 Welcome to my personal portfolio!  
 I'm a MS Computer Science student at USC (2023-2025) and seeking roles in Tech Art, Graphics, or Game Tools
 
-🔗 **Live Site**: [https://ChenXsue.github.io](https://ChenXsue.github.io)
+🔗 **Live Site**: [https://chenxsue.github.io/portfolio/](https://chenxsue.github.io/portfolio/)
 
 ## 🚀 Projects
 
